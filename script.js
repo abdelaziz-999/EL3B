@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function initGame() {
         bird = document.createElement('img');
+                 gravity = game.offsetHeight * 0.0017;
+
         bird.id = 'bird';
         bird.src = birdImages[0];
         bird.style.top = '300px';
@@ -194,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (!isGameOver) {
                             bird.src = birdImages[0];
                         }
-                    }, 4000);
+                    }, 5000);
                 }
             }
             
