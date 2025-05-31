@@ -157,9 +157,10 @@ button:hover {
     background-color: #ec971f;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .game-container {
         height: 500px;
+        max-width: 290px;
     }
     
     #bird {
